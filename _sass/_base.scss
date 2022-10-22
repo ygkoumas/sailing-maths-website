@@ -37,6 +37,13 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+h1 {
+    color: $grey-color-dark;
+}
+
+h2 {
+    color: $navy;
+}
 
 
 /**
@@ -99,8 +106,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $grey-color-dark;
     }
 }
 
@@ -110,12 +116,9 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+    background: $grey-color-light;
+    border-left: 4px solid $navy;
+    padding: $spacing-unit/2;
 
     > :last-child {
         margin-bottom: 0;
