@@ -25,14 +25,8 @@ function createWaveWrapper(halfWaves){
     </div>`
 }
 
-let wave = '';
-for (let _ = 0; _<=200; _++) {
-    waveLength = 25 + 50 * Math.random();
-    wave += createHalfWave(_%2 ? '#0652e1' : '#fff', waveLength, waveLength);
-}
 
 function createBoat(position) {
-
     return `<div style="
         width: 70px;
         position: absolute;
@@ -48,7 +42,7 @@ function createBoat(position) {
                 background: #543;
                 position: absolute;
                 bottom: 0;
-                left: 50px;">
+                left: 53px;">
             </div>
             <div style="
                 width: 2px;
@@ -56,20 +50,41 @@ function createBoat(position) {
                 background: #543;
                 position: absolute;
                 bottom: 50px;
-                left: 32px;
+                left: 35px;
                 transform: rotate(117deg);">
+            </div>
+            <div style="
+                height: 0px;
+                position: absolute;
+                bottom: 14px;
+                left: 8px;
+                border-right: 10px solid #dbaf80;
+                border-top: 65px solid transparent;">
             </div>
             <div style="
                 height: 48px;
                 position: absolute;
                 bottom: 14px;
-                left: 15px;
-                border-left: 34px solid #eccaa6;
+                left: 18px;
+                border-left: 34px solid #dbaf80;
                 border-top: 17px solid transparent;">
+            </div>
+            <div style="
+                height: 0px;
+                position: absolute;
+                bottom: 14px;
+                left: 57px;
+                border-left: 25px solid #dbaf80;
+                border-top: 60px solid transparent;">
             </div>
     </div>`;
 }
-console.info($(window).width());
+
+let wave = '';
+for (let _ = 0; _<=200; _++) {
+    waveLength = 25 + 50 * Math.random();
+    wave += createHalfWave(_%2 ? '#0652e1' : '#fff', waveLength, waveLength);
+}
 
 const windowWidth = $(window).width();
 function setBoatPosition() {
