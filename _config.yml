@@ -7,12 +7,12 @@
 
 # Site settings
 title: Ιστιοπλοϊκά Μαθηματικά
-email: your-email@domain.com
+email:
 description: > # this means to ignore newlines until "baseurl:"
-  Ενας χώρος για μαθηματικά ιστιοπλοΐα και άλλα πολλά!!
+  Ένας χώρος για μαθηματικά ιστιοπλοΐα και άλλα πολλά!!
 baseurl: "/sailing-maths" # the subpath of your site, e.g. /blog
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: 
+github_username: ygkoumas/sailing-maths
 
 # Build settings
 markdown: kramdown
